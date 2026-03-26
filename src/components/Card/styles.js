@@ -5,13 +5,14 @@ export const CardContainer = styled.div`
     background-color: #3b4651;
     position: relative;
     margin-bottom: 24px;
+    overflow: hidden;
 `
 
 export const ImageBackground = styled.img`
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
+    height: 260px;
+    display: block;
+    object-fit: cover;
 `
 
 export const Content = styled.div`

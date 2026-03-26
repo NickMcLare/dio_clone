@@ -29,14 +29,23 @@ const Login = () => {
 
     const onSubmit = async formData => {
         try{
-            const { data } = await api.get(`/users?email=${formData.email}&password=${formData.password}`)
-            if(data.length && data[0].id){
+            const email = formData.email.trim();
+            const password = formData.password.trim();
+
+            const { data } = await api.get('/users', {
+                params: { email }
+            })
+
+            const user = data?.[0];
+            const passwordIsValid = user && String(user.password).trim() === password;
+
+            if(passwordIsValid && user.id){
                 navigate('/feed')
                 return 
+
             } else {
                 alert('Email ou senha inválido.')
-                console.log(formData)
-                console.log(data)
+
             }
         }catch{
             alert('Houve um erro. Tente novamente.')
