@@ -1,6 +1,23 @@
 {
-    "users": [
-      { "id": 1, "name": "Nicholas", "email": "nicholas@gmail.com", "password":"123456" },
-      { "id": 2, "name": "Abner", "email": "abner@gmail.com", "password":"123456" }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "Nicholas",
+      "email": "nicholas@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Abner",
+      "email": "abner@gmail.com",
+      "password": "123456"
+    },
+    {
+      "name": "Maria Eduarda Barcellos",
+      "email": "mariaDuda@gmail.com",
+      "password": "123456",
+      "id": "IStyGpa2skw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

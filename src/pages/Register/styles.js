@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
     width: 100%;
     max-width: 80%;
-    magin: 0 auto;
-    margin-top: 120px;
+    margin: 120px auto 0;
     margin-left: 280px;
     margin-top: 150px;
 
@@ -14,20 +13,12 @@ export const Container = styled.main`
     align-items: center;
 `
 
-export const Wrapper = styled.div`
-    max-width: 300px;
-`
-
 export const Column = styled.div`
     flex: 1;
 `
 
-export const Row = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+export const Wrapper = styled.div`
+    max-width: 300px;
 `
 
 export const Title = styled.h2`
@@ -38,7 +29,6 @@ export const Title = styled.h2`
     width: 320px;
     margin-bottom: 20px;
     line-height: 46px;
-
     color: #FFFFFF;
 `
 
@@ -49,6 +39,7 @@ export const TitleLogin = styled.p`
     font-size: 32px;
     margin-bottom: 20px;
     line-height: 44px;
+    white-space: nowrap;
 `
 
 export const SubtitleLogin = styled.p`
@@ -60,23 +51,28 @@ export const SubtitleLogin = styled.p`
     line-height: 25px;
 `
 
-export const EsqueciText = styled.p`
+export const TermsText = styled.p`
+    margin-top: 24px;
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
-
-    color: #E5E044;
+    line-height: 22px;
+    color: #FFFFFF;
 `
 
-export const CriarText = styled.p`
+export const Highlight = styled.span`
+    color: #23DD7A;
+    font-weight: 700;
+    cursor: pointer;
+`
+
+export const LoginText = styled.p`
+    margin-top: 14px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-    cursor: pointer;
-
-    color: #E23DD7;
+    color: #FFFFFF;
 `
